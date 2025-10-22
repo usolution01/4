@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #000, #222);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Floating Coins */
+.coin-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.coin {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: gold;
+  border-radius: 50%;
+  animation: float 10s linear infinite;
+  box-shadow: 0 0 20px gold;
+}
+.coin:nth-child(1) { left: 10%; animation-delay: 0s; }
+.coin:nth-child(2) { left: 30%; animation-delay: 2s; }
+.coin:nth-child(3) { left: 60%; animation-delay: 4s; }
+.coin:nth-child(4) { left: 80%; animation-delay: 6s; }
+
+@keyframes float {
+  0% { transform: translateY(100vh) scale(0.8); opacity: 0.6; }
+  100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+}
+
+/* Containers */
+.container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  background: rgba(255, 255, 0, 0.1);
+  border: 1px solid gold;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+  text-align: center;
+}
+
+/* Hero */
+.hero {
+  background: radial-gradient(circle, gold, #000);
+  color: #111;
+}
+.hero .logo {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px yellow;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  color: black;
+  text-shadow: 0 0 15px yellow;
+}
+.hero p {
+  max-width: 700px;
+  margin: 20px auto;
+  color: #111;
+  background: #fff9c4;
+  border-radius: 10px;
+  padding: 10px;
+}
+.hero-buttons .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background: black;
+  color: gold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.hero-buttons .btn:hover {
+  background: gold;
+  color: black;
+  box-shadow: 0 0 20px gold;
+}
+.btn.secondary {
+  background: transparent;
+  border: 2px solid gold;
+}
+
+/* Social Links */
+.social-links a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: gold;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.social-links a:hover {
+  background: black;
+  color: gold;
+  box-shadow: 0 0 20px gold;
+}
+
+/* Twitter Feed */
+.twitter iframe {
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: gold;
+  border-top: 1px solid gold;
+}

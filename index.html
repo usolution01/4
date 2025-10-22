@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 – The Spirit of BSC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating Coins Animation -->
+    <div class="coin-bg">
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero container">
+        <img src="image/4.jpg" alt="4 Logo" class="logo">
+        <h1>4 – The Spirit of BSC</h1>
+        <p>Launched by a bad actor on the @BNBChain 🔸 Taken over and ran by a hard working community 🔸 The Spirit of
+            BSC 🔸 Ignore Fud. Stay SAFU!</p>
+        <div class="hero-buttons">
+            <a href="https://dexscreener.com/bsc/0xf0a949d3d93b833c183a27ee067165b6f2c9625e" class="btn">📊 View Live
+                Chart</a>
+            <a href="https://t.me/yourtelegram" class="btn secondary">💬 Join Telegram</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about container">
+        <h2>About 4</h2>
+        <p>4 represents the unstoppable BSC community spirit. Born from chaos, powered by passion, and guided by
+            holders who believe in real decentralization.</p>
+    </section>
+
+    <!-- TOKEN CHART SECTION -->
+    <section class="chart container">
+        <h2>📈 Live Token Chart</h2>
+        <iframe src="https://dexscreener.com/bsc/0xf0a949d3d93b833c183a27ee067165b6f2c9625e" frameborder="0"
+            width="100%" height="500px"></iframe>
+    </section>
+
+    <!-- SWAP SECTION -->
+<section id="swap" class="container swap-section" style="margin-top:40px;">
+  <h2>⚡ Buy 4 Now — Swap</h2>
+  <p>Connect your wallet (MetaMask / Trust Wallet) and swap BNB for 4. Make sure your wallet network is set to BSC (Binance Smart Chain).</p>
+
+  <!-- Swap container -->
+  <div class="swap-wrapper" style="display:flex;gap:20px;flex-direction:column;align-items:center;">
+    <!-- iframe embed of PancakeSwap (preselect output token) -->
+    <div class="swap-iframe" style="width:100%;max-width:1000px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,215,0,0.15);box-shadow:0 8px 30px rgba(255,215,0,0.08);">
+      <iframe id="pancakeFrame"
+        src="https://pancakeswap.finance/swap?outputCurrency=0xf0a949d3d93b833c183a27ee067165b6f2c9625e"
+        style="width:100%;height:640px;border:0;background:#000;"
+        title="PancakeSwap – Swap"
+        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation">
+      </iframe>
+    </div>
+
+    <!-- Fallback / Open in new tab -->
+    <div style="text-align:center;">
+      <a id="openPancake" class="btn" href="https://pancakeswap.finance/swap?outputCurrency=0xf0a949d3d93b833c183a27ee067165b6f2c9625e" target="_blank" rel="noopener noreferrer"
+         style="display:inline-block;padding:12px 20px;border-radius:10px;background:#000;color:gold;text-decoration:none;font-weight:700;border:2px solid gold;">
+        Open PancakeSwap (Recommended)
+      </a>
+    </div>
+
+    <!-- Helpful tips -->
+    <div class="swap-tips" style="max-width:900px;margin-top:12px;text-align:left;color:#fff9c4;padding:12px;border-radius:8px;background:rgba(0,0,0,0.35);">
+      <strong>Tips:</strong>
+      <ul style="margin:8px 0 0 18px;">
+        <li>Set slippage to <strong>1%–12%</strong> (higher slippage may be required for low-liquidity meme tokens).</li>
+        <li>Ensure your wallet is on <strong>Binance Smart Chain (BSC)</strong>.</li>
+        <li>If the iframe doesn't allow wallet connect, click <em>Open PancakeSwap</em> to proceed in a new tab.</li>
+      </ul>
+    </div>
+
+    <!-- iframe status notice -->
+    <div id="iframeNotice" style="margin-top:10px;color:#ffd000;font-weight:600;display:none;">
+      If wallet connection is blocked in this browser, please open PancakeSwap in a new tab using the button above.
+    </div>
+  </div>
+</section>
+
+    <!-- COMMUNITY SECTION -->
+    <section class="community container">
+        <h2>🌍 Join Our Growing Community</h2>
+        <p>We’re building something strong together. Join our social channels and be part of the future of $4.</p>
+        <div class="social-links">
+            <a href="https://t.co/K8RJH8XRSH" target="_blank">Telegram</a>
+            <a href="https://x.com/4onbsc" target="_blank">Twitter</a>
+        </div>
+    </section>
+
+    <!-- TWITTER FEED SECTION -->
+    <section class="twitter container" id="twitter">
+        <h2>🐦 Latest Updates from X</h2>
+        <p>Stay up to date with the latest news, memes, and announcements from the 4 community.</p>
+        <iframe src="https://nitter.net/4onbsc" title="4 Meme Coin Twitter Feed" width="100%" height="600"
+            frameborder="0"></iframe>
+    </section>
+    
+
+<!-- Add this script somewhere after the iframe (or in your script.js) -->
+
+
+    <footer>
+        <p>© 2025 4 Meme Coin | Built with ❤️ for the BSC Community</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
